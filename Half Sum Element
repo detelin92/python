@@ -1,0 +1,14 @@
+n = int(input())
+max = -100000000000000000000000
+suma = 0
+
+for i in range(0, n):
+        a = int(input())
+        if a > max:
+                max = a
+        suma += a
+
+if max - suma == -max:
+        print("Yes Sum = {0}".format(max))
+else:
+        print("No Diff = {0}".format(abs((suma-max)-max)))
